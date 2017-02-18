@@ -117,6 +117,8 @@ static opengl_shader_type_t GL_shader_types[] = {
 	{ SDR_TYPE_NANOVG, "nanovg-v.sdr", "nanovg-f.sdr", nullptr,
 		{ opengl_vert_attrib::POSITION, opengl_vert_attrib::TEXCOORD }, "NanoVG shader" },
 
+	{ SDR_TYPE_ROCKET_UI, "rocketui-v.sdr",	"rocketui-f.sdr", nullptr,
+		{ opengl_vert_attrib::POSITION, opengl_vert_attrib::COLOR, opengl_vert_attrib::TEXCOORD }, "libRocket UI" },
 };
 
 /**

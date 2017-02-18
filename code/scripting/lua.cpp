@@ -61,6 +61,7 @@
 #include "scripting/api/libs/tables.h"
 #include "scripting/api/libs/testing.h"
 #include "scripting/api/libs/utf8.h"
+#include "scripting/api/libs/ui.h"
 
 // End of definitions includes
 

@@ -184,6 +184,8 @@ SET(file_root_def_files_files
 	def_files/post-f.sdr
 	def_files/post-v.sdr
 	def_files/post_processing.tbl
+	def_files/rocketui-f.sdr
+	def_files/rocketui-v.sdr
 	def_files/shadowdebug-f.sdr
 	def_files/shadowdebug-v.sdr
 	def_files/species_defs.tbl
@@ -923,6 +925,17 @@ set (file_root_render
 	render/batching.h
 )
 
+set(file_root_scpui
+	scpui/rocket_ui.cpp
+	scpui/rocket_ui.h
+	scpui/RocketFileInterface.cpp
+	scpui/RocketFileInterface.h
+	scpui/RocketRenderingInterface.cpp
+	scpui/RocketRenderingInterface.h
+	scpui/RocketSystemInterface.cpp
+	scpui/RocketSystemInterface.h
+)
+
 set(file_root_scripting
 	scripting/ade.cpp
 	scripting/ade.h
@@ -955,6 +968,8 @@ set(file_root_scripting_api_libs
 	scripting/api/libs/testing.h
 	scripting/api/libs/utf8.cpp
 	scripting/api/libs/utf8.h
+	scripting/api/libs/ui.cpp
+	scripting/api/libs/ui.h
 )
 
 set(file_root_scripting_api_objs
@@ -1315,6 +1330,7 @@ source_group("pngutils"                           FILES ${file_root_pngutils})
 source_group("Popup"                              FILES ${file_root_popup})
 source_group("Radar"                              FILES ${file_root_radar})
 source_group("Render"                             FILES ${file_root_render})
+source_group("SCPUI"                              FILES ${file_root_scpui})
 source_group("Scripting"                          FILES ${file_root_scripting})
 source_group("Scripting\\Api\\Libs"               FILES ${file_root_scripting_api_libs})
 source_group("Scripting\\Api\\Objs"               FILES ${file_root_scripting_api_objs})
@@ -1410,6 +1426,7 @@ set (file_root
 	${file_root_popup}
 	${file_root_radar}
 	${file_root_render}
+	${file_root_scpui}
 	${file_root_scripting}
 	${file_root_scripting_api_libs}
 	${file_root_scripting_api_objs}
