@@ -25,7 +25,7 @@ add_subdirectory(md5)
 
 add_subdirectory(utfcpp)
 
-add_subdirectory(freetype)
+include(freetype.cmake)
 
 include(FFmpeg.cmake)
 

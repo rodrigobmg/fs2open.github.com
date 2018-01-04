@@ -449,7 +449,7 @@ bool key_event_handler(const SDL_Event& evt) {
 		return input_context->ProcessKeyUp(translateKey(evt.key.keysym.sym), get_modifier_state());
 	}
 }
-#if _MSC_VER == 1900
+#if _MSC_VER >= 1900
 std::u16string utf8_to_utf16(const char* utf8_string)
 {
 	std::wstring_convert<std::codecvt_utf8_utf16<int16_t>, int16_t> convert;
